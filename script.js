@@ -1,59 +1,3 @@
-// const input = document.getElementById("input");
-// const searchButton = document.getElementById("searchButton");
-// const searchResult = document.getElementById("searchResult");
-// const foodIngredients = document.getElementById("foodIngredients");
-// const searchValue = input.value;
-
-// searchButton.addEventListener("click", function(){
-//    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
-//     .then(res => res.json())
-//     .then(data => showData(data))
-    
-
-//     function showData(data) {
-//         searchResult.innerHTML = `${data.data.forEach(Meals =>
-//             `        
-//                 <div >
-//                     <img src"${Meals.strMealThumb}" >
-//                     <h3> ${Meals.strMeal}</h3>
-//                 </div>
-//                 <div >
-//                     <button id="getIngredients"
-//                      onclick="ingredients('${Meals.meals.strMealThumb}','${Meals.strMeal}')">Get Ingredients</button>
-//                 </div>
-//             </div>`).join("")
-//             }`;
-//     }
-// });
-
-// function Ingredients(strMealThumb , mealStr ) {
-//     const foodContainer = document.getElementById("foodIngredients")
-//     fetch(`https://www.themealdb.com/api/json/v1/${strMealThumb}/${strMeal}filter.php?i=chicken_breast`)
-//         .then(res => res.json())
-//         .then(data => {
-//             const p = document.createElement('p')
-//             p.innerHTML = `${data.Ingredients}`
-//             foodContainer.appendChild(p)    
-//         })
-
-// }
-// // document.getElementById("searchButton").addEventListener("click", function(){
-// //     const getMeal = document.getElementById("input").value;
-// //     meal(getMeal);
-// // })
-// // function meal (getMeal){
-// //     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input.value}`)
-// //     .then(res => res.json())
-// //     .then(data => outputData(data));
-// // };
-
-// // function outputData (data){
-// //     console.log(data);
-// //     // document.getElementById("img").innerHTML = data.strMealThumb;
-// //     document.getElementById("searchResult").innerHTML = data.meals;
-// //     const mealName = data.data.map( food => food.meals)
-// //     console.log(mealName);
-// // }
 //Capture button handler and add event lister
     const searchButton = document.getElementById("searchButton");
     searchButton.addEventListener('click', () => {
@@ -72,9 +16,9 @@ const displayData = data => {
     const foodInput = document.getElementById("input").value;
     const parentDiv = document.getElementById('foodArea');
     const meal = data.meals;
-    meal.forEach(element => {
-        const foodName = element.strMeal;
-        const foodImg = element.strMealThumb;
+    meal.forEach(meal => {
+        const foodName = meal.strMeal;
+        const foodImg = meal.strMealThumb;
         const foodInfo = `
             <div onclick=ingredients('${foodInput}') >
                 <img src="${foodImg}" width="50%">
