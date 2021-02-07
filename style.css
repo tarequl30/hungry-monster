@@ -1,0 +1,36 @@
+input{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(170, 167, 167);
+    color: white;
+}
+#searchButton{
+    color: white;
+    background-color: tomato;
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+#searchArea{
+    margin-left: 35%;
+    margin-top: 70px;
+}
+.foodInfo li{
+    display: grid;
+}
+.imgInfo img {
+    width: 50%;
+   border-radius: 15px;
+}
+#foodArea{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+img{
+    border-radius: 15px;
+}
