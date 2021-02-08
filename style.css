@@ -1,36 +1,51 @@
-input{
+
+#searchButton{
+    float: right;
+    color: white;
+    background-color: tomato;
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+input {
     padding: 10px 40px;
     border-radius: 5px;
     border: 0;
     background-color: rgb(170, 167, 167);
     color: white;
 }
-#searchButton{
-    color: white;
-    background-color: tomato;
-    border: 0;
-    border-radius: 7px;
-    padding: 10px 30px;
-    cursor: pointer;
+
+.searchArea {
+    width: 380px;
+    margin: auto;
+    margin-top: 40px;
 }
-#searchArea{
-    margin-left: 35%;
-    margin-top: 70px;
-}
-.foodInfo li{
+
+.foodContent {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
-.imgInfo img {
-    width: 50%;
-   border-radius: 15px;
-}
-#foodArea{
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+
+.food-info {
+    margin: 20px;
     cursor: pointer;
+    box-shadow: 0 0 10px gray;
 }
-img{
-    border-radius: 15px;
+#imgInfo {
+    width: 310px;
+    padding: 5px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 500px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px grey;
 }
+#imgInfo img {
+    width: 300px;
+    border-radius: 10px;   
+}
+
