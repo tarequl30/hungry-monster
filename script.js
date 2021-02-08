@@ -49,11 +49,11 @@ const showIngredients = name => {
         <div>
             <h6>Ingredients</h6>
             <ul>
-                <li>${meal.strMeasure1} ${meal.strIngredient1}</li>
-                <li>${meal.strMeasure2} ${meal.strIngredient2}</li>
-                <li>${meal.strMeasure3} ${meal.strIngredient3}</li>
-                <li>${meal.strMeasure4} ${meal.strIngredient4}</li>
-                <li>${meal.strMeasure5} ${meal.strIngredient5}</li>
+                <li> ${meal.strIngredient1}</li>
+                <li> ${meal.strIngredient2}</li>
+                <li> ${meal.strIngredient3}</li>
+                <li> ${meal.strIngredient4}</li>
+                <li> ${meal.strIngredient5}</li>
             </ul>
         </div>
     </div>
