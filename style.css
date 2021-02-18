@@ -10,7 +10,7 @@
 }
 
 input {
-    padding: 10px 40px;
+    /* padding: 10px; */
     border-radius: 5px;
     border: 0;
     background-color: rgb(170, 167, 167);
@@ -18,9 +18,9 @@ input {
 }
 
 .searchArea {
-    width: 380px;
+    width: 200px;
     margin: auto;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .foodContent {
@@ -34,7 +34,7 @@ input {
     box-shadow: 0 0 10px gray;
 }
 #imgInfo {
-    width: 310px;
+    width: 300px;
     padding: 5px;
     background-color: white;
     display: block;

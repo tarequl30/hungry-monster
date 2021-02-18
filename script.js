@@ -13,6 +13,17 @@ async function loadData(name) {
     const data = await response.json()
     displayData(data);
 }
+// // Click Enter button Function
+// foodName.addEventListener("keypress", function(event){
+//       if(event.key == 'Enter'){
+//         searchButton.click();
+//       }
+// });
+const search = document.getElementById("foodInput").addEventListener("keypress", function(event){
+    if(event.key == 'Enter'){
+        const searchBtn = document.getElementById("searchButton").click();
+    }
+})
 // Display Food Data
 const displayData = data => {
     const displayItem = document.getElementById('content');
